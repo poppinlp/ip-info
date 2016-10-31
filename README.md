@@ -86,7 +86,7 @@ The time interval between each request to prevent ban.
 ### Basic
 
 ```js
-var ip = require('../index.js');
+var ip = require('ip-info');
 
 ip({
     ip: '8.8.8.8'
@@ -100,13 +100,13 @@ ip({
 ### More config
 
 ```js
-var ip = require('../index.js');
+var ip = require('ip-info');
 
 ip({
     cwd: 'relative/path/',
     input: 'path/to/input.yml',
     format: 'yaml',
-    output: 'path/to/output.json',
+    output: 'path/to/output.yml',
     interval: '500'
 });
 ```
